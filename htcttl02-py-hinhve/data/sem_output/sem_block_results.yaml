@@ -1,0 +1,177 @@
+title: Kết quả mô hình SEM (N = 219; χ²/df=1.04, CFI=0.996, RMSEA=0.014, SRMR=0.046)
+output: sem_block_results_2026-10-05.png
+is_results: true
+figsize:
+- 20
+- 9
+xlim:
+- -1.5
+- 20
+ylim:
+- 0
+- 10
+groups: []
+nodes:
+  IQ:
+    label: 'Minh bạch
+
+      thông tin (IQ)'
+    layer: 0
+    x: 0.5
+    y: 5
+    w: 2.8
+    h: 1.5
+    color: '#deebf7'
+  CBTT:
+    label: 'Công bằng
+
+      thủ tục (CBTT)
+
+      R²=0.201'
+    layer: 0
+    x: 4.5
+    y: 8
+    w: 2.8
+    h: 1.5
+    color: '#e2f0d9'
+  CBCN:
+    label: 'Công bằng
+
+      công nhận (CBCN)
+
+      R²=0.186'
+    layer: 0
+    x: 4.5
+    y: 2
+    w: 2.8
+    h: 1.5
+    color: '#e2f0d9'
+  CBPP:
+    label: 'Công bằng
+
+      phân phối (CBPP)
+
+      R²=0.126'
+    layer: 0
+    x: 8
+    y: 5
+    w: 2.8
+    h: 1.5
+    color: '#e2f0d9'
+  TRU:
+    label: 'Niềm tin
+
+      (TRU)
+
+      R²=0.134'
+    layer: 0
+    x: 13.8
+    y: 5
+    w: 2.8
+    h: 1.5
+    color: '#fff2cc'
+  COM:
+    label: 'Tuân thủ
+
+      đóng góp (COM)
+
+      R²=0.265'
+    layer: 0
+    x: 17.8
+    y: 7
+    w: 2.8
+    h: 1.5
+    color: '#fce4d6'
+  COI:
+    label: 'Ý định
+
+      hợp tác (COI)
+
+      R²=0.134'
+    layer: 0
+    x: 17.8
+    y: 3
+    w: 2.8
+    h: 1.5
+    color: '#fce4d6'
+edges:
+- src: IQ
+  tgt: CBPP
+  status: Bác bỏ
+  label: 'H1a
+
+    β=0.118
+
+    p=0.187'
+- src: IQ
+  tgt: CBTT
+  status: Chấp nhận
+  label: 'H1b
+
+    β=0.448
+
+    p=<0.001'
+- src: IQ
+  tgt: CBCN
+  status: Chấp nhận
+  label: 'H1c
+
+    β=0.431
+
+    p=<0.001'
+- src: CBTT
+  tgt: CBPP
+  status: Bác bỏ
+  label: 'H2a
+
+    β=0.144
+
+    p=0.096'
+- src: CBCN
+  tgt: CBPP
+  status: Chấp nhận
+  label: 'H2b
+
+    β=0.207
+
+    p=0.010'
+- src: CBPP
+  tgt: TRU
+  status: Chấp nhận
+  label: 'H3a
+
+    β=0.179
+
+    p=0.023'
+- src: CBTT
+  tgt: TRU
+  status: Chấp nhận
+  label: 'H3b
+
+    β=0.257
+
+    p=<0.001'
+- src: CBCN
+  tgt: TRU
+  status: Bác bỏ
+  label: 'H3c
+
+    β=0.056
+
+    p=0.486'
+- src: TRU
+  tgt: COM
+  status: Chấp nhận
+  label: 'H4
+
+    β=0.515
+
+    p=<0.001'
+- src: TRU
+  tgt: COI
+  status: Chấp nhận
+  label: 'H5
+
+    β=0.366
+
+    p=<0.001'

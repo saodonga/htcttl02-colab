@@ -1,0 +1,115 @@
+title: Mô hình nghiên cứu đề xuất
+output: sem_block_proposed_2026-10-05.png
+is_results: false
+figsize:
+- 20
+- 9
+xlim:
+- -1.5
+- 20
+ylim:
+- 0
+- 10
+groups: []
+nodes:
+  IQ:
+    label: 'Minh bạch
+
+      thông tin (IQ)'
+    layer: 0
+    x: 0.5
+    y: 5
+    w: 2.8
+    h: 1.5
+    color: '#deebf7'
+  CBTT:
+    label: 'Công bằng
+
+      thủ tục (CBTT)'
+    layer: 0
+    x: 4.5
+    y: 8
+    w: 2.8
+    h: 1.5
+    color: '#e2f0d9'
+  CBCN:
+    label: 'Công bằng
+
+      công nhận (CBCN)'
+    layer: 0
+    x: 4.5
+    y: 2
+    w: 2.8
+    h: 1.5
+    color: '#e2f0d9'
+  CBPP:
+    label: 'Công bằng
+
+      phân phối (CBPP)'
+    layer: 0
+    x: 8
+    y: 5
+    w: 2.8
+    h: 1.5
+    color: '#e2f0d9'
+  TRU:
+    label: 'Niềm tin
+
+      (TRU)'
+    layer: 0
+    x: 13.8
+    y: 5
+    w: 2.8
+    h: 1.5
+    color: '#fff2cc'
+  COM:
+    label: 'Tuân thủ
+
+      đóng góp (COM)'
+    layer: 0
+    x: 17.8
+    y: 7
+    w: 2.8
+    h: 1.5
+    color: '#fce4d6'
+  COI:
+    label: 'Ý định
+
+      hợp tác (COI)'
+    layer: 0
+    x: 17.8
+    y: 3
+    w: 2.8
+    h: 1.5
+    color: '#fce4d6'
+edges:
+- src: IQ
+  tgt: CBPP
+  label: H1a (+)
+- src: IQ
+  tgt: CBTT
+  label: H1b (+)
+- src: IQ
+  tgt: CBCN
+  label: H1c (+)
+- src: CBTT
+  tgt: CBPP
+  label: H2a (+)
+- src: CBCN
+  tgt: CBPP
+  label: H2b (+)
+- src: CBPP
+  tgt: TRU
+  label: H3a (+)
+- src: CBTT
+  tgt: TRU
+  label: H3b (+)
+- src: CBCN
+  tgt: TRU
+  label: H3c (+)
+- src: TRU
+  tgt: COM
+  label: H4 (+)
+- src: TRU
+  tgt: COI
+  label: H5 (+)
